@@ -1,0 +1,90 @@
+* {
+    background-color:aliceblue;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.topics{
+    color:#60334c;
+    text-decoration-line: underline;
+}
+.subtopics{
+    color:#60334c;
+}
+
+
+img {
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.intro {
+    margin-left: 250px;
+    margin-top: -250px;
+    margin-right: 50px;
+    background-color:#f4e1ec;
+    padding: 10px;
+    width: 500px;
+}
+.intro *{
+    background-color: #f4e1ec;
+}
+#job{
+    text-decoration-line: underline;
+}
+i{
+    color:#60334c;
+}
+
+
+.skills li{
+    border: 10px solid #f4e1ec;
+    border-radius: 10px;
+    background-color: #f4e1ec;
+    list-style-type: none;
+    margin-left: -40px;
+    width: 80px;
+}
+
+
+div.right_column{
+    margin: -1265px 0px 0px 250px;
+    width: 500px;
+}
+
+.list{
+    list-style-type: square;
+}
+
+
+.footer {
+    margin-left: 250px;
+    width: 500px;
+}
+
+
+input[type=text]{
+    border: 2px solid #60334c;
+    background-color: #f4e1ec;
+    border-radius: 4px;
+}
+input[type=email]{
+    border: 2px solid #60334c;
+    background-color: #f4e1ec;
+    border-radius: 4px;
+}
+textarea{
+    width: 300px;
+    height: 70px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #60334c;
+    background-color: #f4e1ec;
+    border-radius: 4px;
+    resize: none;
+}
+input[type=submit]
+{
+    background-color:#f4e1ec;
+}
+a{
+    color:#60334c;
+}
