@@ -1,0 +1,58 @@
+*{
+    background-color: rgb(175, 195, 175);
+    font-family:'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: center;
+    border-bottom: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #1e552c9c;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(22, 62, 22);
+  }
+  
+  .active {
+    background-color: #16563e;
+  }
+
+  .tocenter{
+    text-align: center;
+  }
+
+  .tomanage{
+    font-size: larger;
+    margin: 0px 350px;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+  .pics{
+    margin: 0px 450px;
+    flex-wrap:nowrap;
+  }
+  .image{
+    position: relative;
+    border: solid 2px rgb(22, 62, 22);
+    border-radius: 50%;
+  }
+  
+  hr{
+    color: #16563e;
+  }
