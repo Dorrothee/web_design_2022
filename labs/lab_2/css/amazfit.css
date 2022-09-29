@@ -1,0 +1,33 @@
+*{
+    background-color: rgb(175, 195, 175);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.tomanage{
+    font-size: larger;
+    margin: 0px 450px;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+li{
+    float: center;
+    border-bottom: 1px solid #bbb;
+}
+li a{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #1e552c9c;
+}
+li a:hover:not(.active){
+    background-color: rgb(22, 62, 22);
+}

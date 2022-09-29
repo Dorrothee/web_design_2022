@@ -1,0 +1,140 @@
+*{
+    background-color: rgb(175, 195, 175);
+    font-family:'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+li{
+    float: center;
+    border-bottom: 1px solid #bbb;
+}
+li a{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #1e552c9c;
+}
+li a:hover:not(.active){
+    background-color: rgb(22, 62, 22);
+}
+.active{
+    background-color: #16563e;
+}
+
+.tocenter{
+    text-align: center;
+  }
+
+.tomanage, .tolist, #start{
+    font-size: larger;
+    margin: 0px 350px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+#start{
+    margin: 0px 300px;
+    text-align: justify;
+}
+
+.tolist{
+    margin: 15px 350px;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+hr{
+    background-color:#16563e;
+}
+
+.pic_1{
+    margin: 0px 620px;
+    position: relative;
+  }
+.pic_2{
+    margin: 0px 570px;
+    position: relative;
+}
+
+.pic_3{
+    margin: 0px 570px;
+    position: relative;
+}
+
+.image{
+    border: solid 2px rgb(22, 62, 22);
+}
+
+  .overlay_1 {
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    background-color:#16563e;
+    overflow: hidden;
+    width: 115.8%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .pic_1:hover .overlay_1 {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .overlay_2 {
+    position: absolute;
+    bottom: 98%;
+    left: 0;
+    right: 0;
+    background-color:#16563e;
+    overflow: hidden;
+    width: 112%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .pic_2:hover .overlay_2 {
+    bottom: 0;
+    height: 100%;
+  }
+
+.imagge {
+    border: solid 2px rgb(22, 62, 22);
+}
+
+  .overlay_3 {
+    position: absolute;
+    bottom: 98%;
+    left: 0;
+    right: 0;
+    background-color:#16563e;
+    overflow: hidden;
+    width: 112%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .pic_3:hover .overlay_3 {
+    bottom: 0;
+    height: 100%;
+  }
+
+
+  .message {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
