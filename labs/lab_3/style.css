@@ -77,6 +77,21 @@ header.shadow{
     display: flex;
     column-gap: 0.8rem;
 }
+
+.header_-icon .cart{
+    position: relative;
+}
+.header_icon .cart .cart_amount{
+    position: absolute;
+    top: 0; right: 3px;
+    font-size: .6rem;
+    background-color: rgb(127, 141, 34);
+    color: var(--main-color);
+    border-radius: .4rem;
+    padding: 3px;
+    display: none;
+}
+
 .header_icon .bx{
     color: var(--bg-color);
 }
@@ -201,6 +216,7 @@ header.shadow{
     padding: 20px;
 }
 .products_container .box h3{
+    text-align: center;
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -218,17 +234,71 @@ header.shadow{
     border-radius: 4px;
     font-weight: 500;
 }
-.products_container .box .content a{
-    padding: 0 1rem;
-    color: var(--text-color);
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    text-transform: uppercase;
+
+input:focus,
+button:focus,
+
+button{
+    border: none;
+    background: none;
 }
-.products_container .box .content a:hover{
-    background: var(--main-color);
-    color: var(--bg-color);
-    transition: 0.2s all linear;
+
+.form_control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.form_control:disabled, .form_control[read-only]{
+    background-color:#97a57a72;
+    border-radius: 0.7rem;
+}
+table{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table tr,
+.table tr td{
+    vertical-align: middle;
+}
+.table tr td p{
+    text-align: center;
+}
+.btn_container{
+    display: flex;
+    align-items: center;
+}
+.btn_container .form_control{
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 0.7rem;
+}
+#cart_table .form_control{
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
+.cart_qty_plus,
+.cart_qty_minus{
+    margin: 15px;
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+}
+
+.model_img{
+    width: 200px;
+    height: 200px;
+}
+.model_img_extra{
+    width: 150px;
+    height: 150px;
+}
+.model_img img{
+    width: 100%;
 }
 
 .team_container{
@@ -329,6 +399,8 @@ header.shadow{
     text-align: center;
     background: var(--second-color);
 }
+
+
 
 @media (max-width: 1058px){
     header{

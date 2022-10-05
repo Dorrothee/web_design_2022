@@ -7,6 +7,7 @@
     <title>Watches Shop</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -16,10 +17,11 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Shop</a></li>
             <li><a href="#team">Our Team</a></li>
         </ul>
         <div class="header_icon">
-            <a href="store.html"><i class='bx bx-cart' ></i></i></a>
+            <a href="#cart"><i class='bx bx-cart' ></i></i></a>
             <i class='bx bx-search-alt' id="search_icon"></i>
         </div>
         <div class="search_box">
@@ -30,7 +32,7 @@
         <div class="home_text">
             <h1>Charged with precision. Tested for durability</h1>
             <p>Choose the way live your life with us</p>
-            <a href="#" class="btn">Shop now</a>
+            <a href="#cart" class="btn">Shop now</a>
         </div>
         <div class="home_img">
             <img src="images/formenu.png" alt="Main" height="500">
@@ -64,7 +66,6 @@
                 <h3>Garmin MARQ Commander</h3>
                 <div class="content">
                     <span>$2 590</span>
-                    <a href="#">Add to cart</a>
                 </div>
             </div>
             <div class="box">
@@ -72,7 +73,6 @@
                 <h3>Garmin Instinct 2 Solar Tactical</h3>
                 <div class="content">
                     <span>$610</span>
-                    <a href="#">Add to cart</a>
                 </div>
             </div>
             <div class="box">
@@ -80,7 +80,6 @@
                 <h3>Garmin Instinct 2 Solar</h3>
                 <div class="content">
                     <span>$490</span>
-                    <a href="#">Add to cart</a>
                 </div>
             </div>
             <div class="box">
@@ -88,11 +87,115 @@
                 <h3>Amazfit T-Rex Army</h3>
                 <div class="content">
                     <span>$360</span>
-                    <a href="#">Add to cart</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="cart" id="cart">
+        <div class="heading">
+            <h2>Shop</h2>
+        </div>
+        <div class="table">
+            <table class="cart_table" id="cart_table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="images/watch1.png"></div>
+                        </td>
+                        <td>
+                            <p>Garmin MARQ</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="2590" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="images/watch2.png"></div>
+                        </td>
+                        <td>
+                            <p>Garmin Instinct 2 Solar Tactical</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="610" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="images/watch3.png"></div>
+                        </td>
+                        <td>
+                            <p>Garmin Instinct 2 Solar</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="490" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img_extra"><img src="images/watch4.png"></div>
+                        </td>
+                        <td>
+                            <p>Amazfit T-Rex Army</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="360" class="price form_control" disabled>
+                        </td>
+                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+
+
     <section class="team" id="team">
         <div class="heading">
             <h2>Our team</h2>
@@ -188,6 +291,6 @@
             &#169; All Rights Reserved
         </p>
     </div>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
