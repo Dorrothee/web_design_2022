@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "json-server -w fridges.json"
+    "server": "json-server -w -H 0.0.0.0 fridges.json --port 3000"
   },
   "keywords": [
     "fridges"
