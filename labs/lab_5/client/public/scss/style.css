@@ -1,0 +1,245 @@
+.light-theme {
+  background-color: rgb(241, 230, 195);
+}
+
+* {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 70px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  transition: 0.5s linear;
+}
+header .header_icon {
+  font-size: 22px;
+  z-index: 10000;
+  display: flex;
+}
+header .navbar {
+  display: flex;
+}
+header .navbar a {
+  padding: 20px 150px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+header .navbar a:hover {
+  color: rgb(189, 177, 188);
+  border-radius: 0.2rem;
+  transition: 0.2s all linear;
+}
+
+.shadow {
+  background: firebrick;
+}
+
+.headings {
+  color: rgb(175, 173, 96);
+}
+
+#menu_icon {
+  color: var(--bg-color);
+  font-size: 24px;
+  z-index: 100001;
+  display: none;
+}
+
+body {
+  background-color: rgba(75, 13, 13, 0.757);
+  font-size: 18px;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+.home .home_text h1 {
+  font-size: 3.4rem;
+  color: rgb(16, 12, 44);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.home .home_text p {
+  font-size: 2rem;
+  color: rgb(16, 12, 44);
+  margin: 0.5rem 0 1.4rem;
+}
+.home .home_text a {
+  padding: 5px 10px;
+  border-radius: 1rem;
+  color: firebrick;
+  background-color: rgb(189, 177, 188);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+  gap: 2rem;
+}
+.about h1 {
+  text-align: center;
+  font-size: larger;
+  text-transform: uppercase;
+  color: rgb(16, 12, 44);
+}
+.about .about_img {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about .about_img img {
+  border-radius: 0.5rem;
+}
+.about .about_img img:hover {
+  transform: scale(1.05);
+}
+.about .about_text p {
+  color: rgb(16, 12, 44);
+  font-size: 1.3rem;
+  margin: 0.5rem 0 1.1rem;
+  text-align: justify;
+}
+
+.models_text {
+  font-size: larger;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(16, 12, 44);
+}
+
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(75, 13, 13, 0.757);
+}
+.models h3, .models h4, .models p {
+  color: rgb(189, 177, 188);
+}
+.models img {
+  border: 1px solid none;
+  border-radius: 1rem;
+  height: 200px;
+}
+.models img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  color: rgb(16, 12, 44);
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 1058px) {
+  header {
+    padding: 16px 60px;
+  }
+  section {
+    padding: 50px 60px;
+  }
+  .home_text h1 {
+    font-size: 2.4rem;
+  }
+  .home_img {
+    width: 30px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 16px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  .home_text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 12px 4%;
+  }
+  #menu_icon {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(75, 13, 13, 0.757);
+    row-gap: 1.4rem;
+    padding: 20px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .navbar a {
+    color: rgb(0, 0, 0);
+  }
+  .navbar a:hover {
+    color: rgb(189, 177, 188);
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  .about {
+    align-items: center;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    padding: 11px 4%;
+  }
+  .home_text {
+    padding-top: 15px;
+  }
+  .home_text h1 {
+    font-size: 1.4rem;
+  }
+  .home_text p {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .about_img {
+    order: 2;
+  }
+  .about p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

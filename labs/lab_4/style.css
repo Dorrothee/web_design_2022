@@ -465,7 +465,7 @@ table{
         font-size: 2rem;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 900px){
     header{
         padding: 12px 4%;
     }
