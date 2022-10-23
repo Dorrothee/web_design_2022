@@ -1,0 +1,52 @@
+{
+    "fridges":[
+        {
+            "id": "LG",
+            "name": "GC-Q247CBDC",
+            "weight": 121,
+            "image_link": "./images/LG GC-Q247CBDC_121.jpg"
+        },
+        {
+            "id": "LG",
+            "name": "GC-B247JMUV",
+            "weight": 103,
+            "image_link": "./images/LG GC-B247JMUV_103.jpg"
+        },
+        {
+            "id": "LG",
+            "name": "GN-H702HMHZ",
+            "weight": 88,
+            "image_link": "./images/LG GN-H702HMHZ_88.jpg"
+        },
+        {
+            "id": "LG",
+            "name": "GW-B509PSAP",
+            "weight": 83,
+            "image_link": "./images/LG GW-B509PSAP_83.jpg"
+        },
+        {
+            "id": "SAMSUNG",
+            "name": "RB38T600FSA",
+            "weight": 71,
+            "image_link": "./images/SAMSUNG RB38T600FSA_71.jpg"
+        },
+        {
+            "id": "SAMSUNG",
+            "name": "RB38T676FB1",
+            "weight": 70,
+            "image_link": "./images/SAMSUNG RB38T676FB1_70.jpg"
+        },
+        {
+            "id": "SAMSUNG" ,
+            "name": "RB34T600FEL",
+            "weight": 66,
+            "image_link": "./images/SAMSUNG RB34T600FEL_66.jpg"
+        },
+        {
+            "id": "SAMSUNG",
+            "name": "RB34T600FSA",
+            "weight": 66,
+            "image_link": "./images/SAMSUNG RB34T600FSA_66.jpg"
+        }
+    ]
+}

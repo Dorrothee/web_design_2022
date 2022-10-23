@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic WebSite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <i class='bx bx-menu' id="menu_icon"></i>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#different_models">Models</a></li>
+        </ul>
+        <div class="header_icon">
+            <button id="theme_icon"><i class='bx bxs-droplet-half'></i></button>
+            <div id="output"></div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home_text">
+            <h1>Warehouse of fridges</h1>
+            <p>Find out about fridges with us</p>
+            <a href="#different_models" class="btn">Go to models</a>
+        </div>
+        <div class="home_img">
+            <img src="./images/intro.png" alt="Intro" height="450">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about_img">
+            <img src="./images/fridge_work.jpg" alt="Intro" height="350">
+        </div>
+        <div class="about_text">
+            <p>
+                In order to keep food fresh, a low temperature must be maintained in the
+                immediate environment to reduce the reproduction rate of harmful bacteria.
+                A refrigerator works to transfer heat from inside to outside, which is why
+                it feels warm if you put your hand on the back side of fridge near the metal
+                pipes - you'll find out how that works in a bit.
+            </p>
+            <p>
+                Refrigerators work by causing the refrigerant circulating inside them to
+                change from a liquid into a gas. This process, called evaporation, cools
+                the surrounding area and produces the desired effect. You can test this
+                process for yourself by taking some alcohol and putting a drop or two on
+                your skin. As it evaporates, you should feel a chilling sensation - the
+                same basic principle gives us safe food storage. 
+            </p>
+        </div>
+    </section>
+
+    <section class="models_text" id="models_text">
+        <h1 id="different_models">Different models</h1>
+    <div class="models" id="models"></div>
+    </section>
+</body>
+<script src="./js/main.js"></script>
+<footer> &copy; Created by Daryna Boruk | All Rights Are Reserved</footer>
+</html>
