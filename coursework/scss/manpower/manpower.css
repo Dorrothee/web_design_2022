@@ -1,0 +1,86 @@
+* {
+  font-family: "Press Start 2P", cursive;
+  background-color: #313121;
+  color: white;
+  -webkit-text-stroke: 0.5px rgb(25, 57, 20);
+}
+
+.arrows {
+  position: absolute;
+  top: 20px;
+}
+.arrows li {
+  display: inline-block;
+  line-height: 30px;
+  position: relative;
+}
+.arrows li:before {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -2px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #313121;
+  z-index: 0;
+}
+.arrows li:first-child:before {
+  border-color: transparent;
+}
+.arrows a:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -15px;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent rgb(75, 78, 43);
+  z-index: 10;
+}
+.arrows .active a {
+  background: rgb(62, 82, 54);
+  z-index: 100;
+}
+.arrows .active a:after {
+  border-left-color: rgb(62, 82, 54);
+}
+.arrows a {
+  text-decoration: none;
+  display: block;
+  background: rgb(75, 78, 43);
+  padding: 0 20px;
+}
+.arrows a:hover {
+  background: rgb(106, 111, 96);
+}
+.arrows a:hover:after {
+  border-color: transparent transparent transparent rgb(106, 111, 96);
+}
+
+.manpower_intro {
+  color: rgb(147, 125, 17);
+  -webkit-text-stroke: 0.7px black;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 105px;
+}
+
+.manpower_info {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 215px;
+  left: 50px;
+}
+.manpower_info .manpower_name span {
+  text-align: center;
+  display: flex;
+  margin-top: 10px;
+  width: 160px;
+  padding: 7px;
+  background-color: rgba(63, 99, 61, 0.456);
+}/*# sourceMappingURL=manpower.css.map */

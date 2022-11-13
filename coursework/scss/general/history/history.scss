@@ -1,0 +1,60 @@
+$bgcolor: #313121;
+$bordercolor: rgb(25, 57, 20);
+$font-stack: 'Press Start 2P', cursive;
+@mixin xcenter{ 
+    left: 50%; 
+    transform: translateX(-50%);
+     position: absolute;
+}
+
+* {
+    font-family: $font-stack;
+    background-color: $bgcolor;
+    -webkit-text-stroke: 0.5px $bordercolor;
+}
+
+.history {
+    position: relative;
+    background: linear-gradient(black, 45%, $bgcolor);
+    height: 150vh;
+    .line {
+        margin-top: 100px;
+        @include xcenter;
+        height: 150vh;
+        width: 10px;
+        background-color: #6B1C87;
+        position: absolute;
+        left: 50%;
+        opacity: 30%;
+    }
+    
+    .history__center{
+        background-color: transparent;
+        .romb {
+            background-color: transparent;
+            transform: rotate(45deg);
+            width: 62px;
+            height: 62px;
+            background: #6B1C87;
+            position: absolute;
+            // left: 825px;
+            left: calc(50% - 31px);
+            top: 0px;
+            z-index: 10;
+            opacity: 40%;
+            margin-top: 70px;
+            }
+        .date {
+            position: absolute;
+            top: 22px;
+            left: calc(50% - 31px);
+            color: #eee;
+            background-color: transparent;
+            z-index: 20;
+            margin-top: 70px;
+            span{
+                font-size: 20px;
+            }
+    }
+}
+}

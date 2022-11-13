@@ -1,0 +1,51 @@
+* {
+  font-family: "Press Start 2P", cursive;
+  background-color: #313121;
+  -webkit-text-stroke: 0.5px rgb(25, 57, 20);
+}
+
+.history {
+  position: relative;
+  background: linear-gradient(black, 45%, #313121);
+  height: 150vh;
+}
+.history .line {
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 150vh;
+  width: 10px;
+  background-color: #6B1C87;
+  position: absolute;
+  left: 50%;
+  opacity: 30%;
+}
+.history .history__center {
+  background-color: transparent;
+}
+.history .history__center .romb {
+  background-color: transparent;
+  transform: rotate(45deg);
+  width: 62px;
+  height: 62px;
+  background: #6B1C87;
+  position: absolute;
+  left: calc(50% - 31px);
+  top: 0px;
+  z-index: 10;
+  opacity: 40%;
+  margin-top: 70px;
+}
+.history .history__center .date {
+  position: absolute;
+  top: 22px;
+  left: calc(50% - 31px);
+  color: #eee;
+  background-color: transparent;
+  z-index: 20;
+  margin-top: 70px;
+}
+.history .history__center .date span {
+  font-size: 20px;
+}/*# sourceMappingURL=history.css.map */
