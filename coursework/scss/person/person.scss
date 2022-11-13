@@ -96,3 +96,571 @@ $font-stack: 'Press Start 2P', cursive;
         font-size: 22px;
     }
 }
+
+@media (max-width: 360px){
+    .arrows{
+        font-size: 10px;
+        margin-top: -10px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 25px;
+        margin-top: 50px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 60px;
+            margin-left: -255px;
+            width: 225px;
+        }
+    }
+    .info{
+        width: 250px;
+        font-size: 20px;
+        margin-right: -400px;
+        margin-top: 350px;
+        .topic{
+            font-size: 20px;
+        }
+        #some_info{
+            line-height: 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 27px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -255px;
+            width: 245px;
+        }
+    }
+    .info{
+        width: 300px;
+        font-size: 20px;
+        margin-right: -400px;
+        margin-top: -63px;
+        .topic{
+            font-size: 22px;
+        }
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .arrows{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 27px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -175px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -350px;
+        margin-top: -55px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1220px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -50px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -300px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1500px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -5px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -200px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -50px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -300px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1149px){
+    .arrows{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -70px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -400px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1132px){
+    .arrows{
+        font-size: 15.5px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -100px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-left: 400px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1080px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -100px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-left: 400px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1058px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -200px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -400px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -200px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -400px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 896px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -250px;
+            width: 270px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -450px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -255px;
+            width: 245px;
+        }
+    }
+    .info{
+        font-size: 20px;
+        margin-right: -450px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -275px;
+            width: 235px;
+        }
+    }
+    .info{
+        font-size: 20px;
+        margin-right: -500px;
+        margin-top: -65px;
+        #some_info{
+            line-height: 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 588px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -200px;
+            width: 300px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -390px;
+        margin-top: 375px;
+        #some_info{
+            line-height: 20px;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 565px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -250px;
+            width: 300px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -400px;
+        margin-top: 375px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 510px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        font-size: 30px;
+        }
+    .personal_photo{
+        img{
+            margin-top: 10px;
+            margin-left: -200px;
+            width: 300px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -425px;
+        margin-top: 375px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        margin-top: 40px;
+        font-size: 30px;
+        }
+    .personal_photo{
+        margin-top: 30px;
+        img{
+            margin-left: -237px;
+            width: 300px;
+        }
+    }
+    .info{
+        font-size: 22px;
+        margin-right: -450px;
+        margin-top: 400px;
+        #some_info{
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        margin-top: 50px;
+        font-size: 27px;
+        }
+    .personal_photo{
+        margin-top: 30px;
+        img{
+            margin-left: -260px;
+            width: 275px;
+        }
+    }
+    .info{
+        font-size: 20px;
+        margin-right: -470px;
+        margin-top: 400px;
+        #some_info{
+            line-height: 20px;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .arrows{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .personal_intro{
+        margin-top: 70px;
+        font-size: 27px;
+        }
+    .personal_photo{
+        margin-top: 70px;
+        img{
+            margin-left: -250px;
+            width: 225px;
+        }
+    }
+    .info{
+        width: 250px;
+        font-size: 17px;
+        margin-right: -475px;
+        margin-top: 330px;
+        #some_info{
+            line-height: 20px;
+            font-size: 15px;
+        }
+    }
+}

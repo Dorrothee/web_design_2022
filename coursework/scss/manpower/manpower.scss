@@ -96,3 +96,68 @@ $font-stack: 'Press Start 2P', cursive;
         }
     }
 }
+
+@media (max-width: 360px){
+    .arrows{
+        font-size: 10px;
+        margin-top: -10px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .manpower_intro{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .manpower_info{
+        margin-left: 7px;
+        .manpower_photo{
+            img{
+                width: 250px;
+            }
+        }
+        .manpower_name{
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .arrows{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+}
+
+@media (max-width: 992px){
+    .arrows{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+}
+
+@media (max-width: 1220px){
+    .arrows{
+        margin-top: 5px;
+        margin-left: -20px;
+        line-height: $breadcrumbs-height + 10px;
+    }
+    .manpower_info{
+        .manpower_photo{
+            margin-left: -15px;
+            img{
+                width: 180px;
+            }
+        }
+        .manpower_name{
+            font-size: 13px;
+            span{
+                margin-top: 10px;
+                width: 140px;
+            }
+        }
+    }
+}

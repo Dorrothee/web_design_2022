@@ -1,4 +1,4 @@
-* {
+body {
   font-family: "Press Start 2P", cursive;
   color: rgb(18, 31, 11);
   -webkit-text-stroke: 0.1px white;
@@ -182,93 +182,10 @@
 }
 .footer .copyright {
   background-color: transparent;
-  color: #573F48;
+  color: #7f5a68;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*@media (max-width: 360px){
-    body{
-        .home_text{
-            .h1{
-                width: 290px;
-                height: 90px;
-                left: 29px;
-                top: 219px;
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 1.7;
-
-            }
-            .p{
-                font-size: 10px;
-                left: 5rem;
-                top: 2rem;
-                width: 100px;
-            }
-            a{
-                font-size: 10px;
-                letter-spacing: 0px;
-                padding: 10px 25px;
-                border: solid white 2px;
-                position: absolute;
-                top: 20rem;
-                right: 2rem;
-            }
-        }
-        .tank_img{
-            img{
-                top: 22rem;
-                width: 300px;
-                height: 300px;
-                left: -23px;
-            }
-        }
-        .zsu_img{
-            img{
-            left: 2rem;
-            top: 2rem;
-            width: 30px;
-            height: 30px;
-            }
-        }
-        .logo{
-            top: 10px;
-            width: 50px;
-            height: 50px;
-        }
-    }
-    span{
-        display: none;
-    }
-    .info_video{
-        .power{
-        display: none;
-        }
-        .video{
-            left: -200px;
-            iframe{
-                width: 300px;
-                height: 180px;
-            }
-        }   
-    }
-    /*.footer{
-        display: none; 
-        padding: 0;
-        margin: 0;
-        .footer_box{
-            display: none; 
-            li {
-                a{
-                    display: none; 
-                }
-            }
-        }
-        .copyright{
-            display: none; 
-        }
-    }
-}*/
 @media (max-width: 360px) {
   body .home_text .h1 {
     width: 290px;
@@ -324,33 +241,41 @@
     width: 300px;
     height: 180px;
   }
-  /*.footer{
-      padding: 0;
-      margin: 0;
-      margin-top: 50px;
-      padding-top:  15px;
-      padding-left: 3px;
-      padding-right: 5px;
-      list-style: none;
-      height: 25vh;
-      font-size: 5px;
-      line-height: 0; 
-      .footer_box{
-          font-size: 5px;
-          li {
-              a{
-                  font-size: 5px;
-              }
-          }
-          .social{
-              img{
-                  width: 15px;
-                  height: 15px;
-              }
-          }
-      }
-      .copyright{
-          font-size: 7px;
-      }
-  }*/
+  .footer {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-left: 3px;
+    padding-right: 47px;
+    list-style: none;
+    height: 35vh;
+    font-size: 5px;
+  }
+  .footer .footer_box .contact {
+    margin-top: 10px;
+    font-size: 8px;
+  }
+  .footer .footer_box .contact .phone {
+    line-height: 17px;
+  }
+  .footer .footer_box .social {
+    margin-top: 15px;
+  }
+  .footer .footer_box .social img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .footer_box li {
+    margin-top: 17px;
+    margin-right: 30px;
+    line-height: 7px;
+  }
+  .footer .footer_box li a {
+    font-size: 7px;
+  }
+  .footer .copyright {
+    line-height: 15px;
+    font-size: 7px;
+  }
 }/*# sourceMappingURL=general.css.map */

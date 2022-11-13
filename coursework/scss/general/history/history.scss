@@ -4,10 +4,10 @@ $font-stack: 'Press Start 2P', cursive;
 @mixin xcenter{ 
     left: 50%; 
     transform: translateX(-50%);
-     position: absolute;
+    position: absolute;
 }
 
-* {
+body{
     font-family: $font-stack;
     background-color: $bgcolor;
     -webkit-text-stroke: 0.5px $bordercolor;
@@ -37,7 +37,6 @@ $font-stack: 'Press Start 2P', cursive;
             height: 62px;
             background: #6B1C87;
             position: absolute;
-            // left: 825px;
             left: calc(50% - 31px);
             top: 0px;
             z-index: 10;
@@ -55,6 +54,6 @@ $font-stack: 'Press Start 2P', cursive;
             span{
                 font-size: 20px;
             }
+        }
     }
-}
 }
