@@ -1,0 +1,108 @@
+$bgcolor: #313121;
+$textcolor: white;
+$topiccolor: rgb(18, 31, 11);
+$bordercolor: rgb(25, 57, 20);
+$arrowcolor: rgb(75, 78, 43);
+$activearrow: rgb(62, 82, 54);
+$hoverarrow: rgb(106, 111, 96);
+$breadcrumbs-height: 30px;
+$font-stack: 'Press Start 2P', cursive;
+
+*{
+    color: $textcolor;
+    font-family: $font-stack;
+    background-color: $bgcolor;
+    -webkit-text-stroke: 0.5px $bordercolor;
+}
+
+.arrows{
+    position: absolute;
+    top: 20px;
+    li{
+        display: inline-block;
+        line-height: $breadcrumbs-height;
+        position: relative;
+        &:before{
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            left: -2px;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent $bgcolor;
+            z-index: 0;
+        }
+        &:first-child:before{
+            border-color: transparent;
+        }
+    }
+    a:after{
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        right: -15px;
+        border-style: solid;
+        border-width: 15px 0 15px 15px;
+        border-color: transparent transparent transparent $arrowcolor;
+        z-index: 10;
+    }
+    .active a{
+        background: $activearrow;
+        z-index: 100;
+        &:after{
+            border-left-color: $activearrow;
+        }
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        background: $arrowcolor;
+        padding: 0 20px;
+    }
+    a:hover{
+        background: $hoverarrow;
+    }
+    a:hover:after{
+        border-color: transparent transparent transparent $hoverarrow;
+    }
+}
+
+.manpower_info{
+    .h1{
+        color: $topiccolor;
+        background-color: transparent;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 40px;
+        font-weight: bolder;
+        inline-size: 400px;
+        position: absolute;
+        right: 12rem;
+        top: 9rem;
+        letter-spacing: 4px;
+        -webkit-text-stroke: 0.5px rgb(147, 125, 17); 
+    }
+    a{
+       background-color: transparent;
+       font-size: 15px;
+       color: $textcolor;
+       letter-spacing: 2px;
+       padding: 11px 31px;
+       border: solid white 2px;
+       position: absolute;
+       right: 12.2rem;
+       top: 16rem;
+    }
+}
+
+.helicopter_img{
+    img{
+       position: absolute;
+       right: 110px;
+       bottom: 80px;
+       transform: skewY(8deg);
+    }
+}

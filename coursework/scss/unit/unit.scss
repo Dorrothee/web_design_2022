@@ -1,0 +1,111 @@
+$bgcolor: #313121;
+$textcolor: white;
+$bordercolor: rgb(25, 57, 20);
+$topiccolor: rgb(147, 125, 17);
+$topicscolor:rgb(125, 129, 68);
+$arrowcolor: rgb(75, 78, 43);
+$activearrow: rgb(62, 82, 54);
+$hoverarrow: rgb(106, 111, 96);
+$breadcrumbs-height: 30px;
+$font-stack: 'Press Start 2P', cursive;
+
+*{
+    font-family: $font-stack;
+    background-color: $bgcolor;
+    color: $textcolor;
+    -webkit-text-stroke: 0.5px $bordercolor;
+}
+
+.arrows{
+    position: absolute;
+    top: 20px;
+    li{
+        display: inline-block;
+        line-height: $breadcrumbs-height;
+        position: relative;
+        &:before{
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            left: -2px;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent $bgcolor;
+            z-index: 0;
+        }
+        &:first-child:before{
+            border-color: transparent;
+        }
+    }
+    a:after{
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        right: -15px;
+        border-style: solid;
+        border-width: 15px 0 15px 15px;
+        border-color: transparent transparent transparent $arrowcolor;
+        z-index: 10;
+    }
+    .active a{
+        background: $activearrow;
+        z-index: 100;
+        &:after{
+            border-left-color: $activearrow;
+        }
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        background: $arrowcolor;
+        padding: 0 20px;
+    }
+    a:hover{
+        background: $hoverarrow;
+    }
+    a:hover:after{
+        border-color: transparent transparent transparent $hoverarrow;
+    }
+}
+
+.unit_intro{
+    color: $topiccolor;
+    -webkit-text-stroke: 0.7px black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 105px;
+}
+
+.unit_photo{
+    position: absolute;
+    top: 245px;
+    left: 230px;
+    cursor: pointer;
+}
+
+.info{
+    background-color: transparent;
+    position: absolute;
+    top: 210px;
+    width: 1000px;
+    right: 70px;
+}
+
+#topics{
+    color:$topicscolor;
+    font-size: 21px;
+}
+
+#inline{
+    display: inline;
+    font-size: 17px;
+}
+
+.unit_honors li{
+    margin-top: 10px;
+    line-height: 20px;
+}
